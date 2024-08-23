@@ -3,7 +3,7 @@ import { FormContext } from "../contextAPI/context"
 import FormNotSubmitted from "../components/FormNotSubmited";
 export default function Response(){
     const formContext=useContext(FormContext);
-    if(formContext.data===null){
+    if(!formContext.data){
         return (<FormNotSubmitted/>)
     }
     const {name,profession,email,skills,gender,terms}=formContext.data;
