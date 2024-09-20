@@ -7,7 +7,6 @@ export default function Response(){
         return (<FormNotSubmitted/>)
     }
     const {name,profession,email,skills,gender,terms}=formContext.data;
-    console.log("from response page ",formContext.data);
     
     return(
         <div className="bg-gradient-to-r from-indigo-500 h-screen flex justify-center items-center">

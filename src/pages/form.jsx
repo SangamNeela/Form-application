@@ -11,10 +11,8 @@ export default function Form(){
     const methods=useForm()
     const navigate=useNavigate();
     const formContext=useContext(FormContext);
-    console.log("form context = ",formContext)
 
     function handleFormSubmit(values){
-        console.log("values = ",values);
         formContext.setData(values);
         navigate(`/response`);
     }
